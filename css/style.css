@@ -1,7 +1,7 @@
 /* 
 -- Colors --
 Text - #000
-Primary - #F00
+Primary - #BF4F51
 Secondairy - #FFF
 SecondairyALT - #FFFAEF
 */
@@ -72,7 +72,7 @@ nav {
     padding: 0.5em 2em;
     justify-content: space-around;
     align-items: center;
-    background-color: #f00;
+    background-color: #BF4F51;
 }
 
 p{
@@ -88,7 +88,7 @@ footer{
     margin-top: auto;
     padding: 1em;
     align-items: center;
-    background-color: #f00;
+    background-color: #BF4F51;
     justify-content: center;
 }
 
