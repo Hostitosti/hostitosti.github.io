@@ -16,8 +16,6 @@ SecondairyALT - #FFFAEF
 }
 
 body {
-    width: 100%;
-    margin: auto;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -25,7 +23,6 @@ img {
     width: 100px;
     background-color: transparent;
 }
-
 .flex-container {
     display: flex;
 }
@@ -54,16 +51,21 @@ img {
     padding: 1em;
     margin: 0 0.5em;
     transition-duration: 0.3s;
+    
 }
 
 .nav-button:hover {
     box-shadow: -5px 5px #000;
+    text-transform: uppercase;
+    transform: translate(5px, -5px);
 }
 
 .nav-button:active {
     box-shadow: 0px 0px #000;
-    transform: translate(-5px, 5px);
+    transform: translate(0px, 0px);
 }
+
+
 
 
 nav {
@@ -71,7 +73,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: #f00;
-    
 }
 
 p{
@@ -81,14 +82,29 @@ p{
 p::selection{
     background-color: #000;
     color: #FFF;
-
 }
 
 footer{
+    margin-top: auto;
+    padding: 1em;
+    align-items: center;
     background-color: #f00;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    justify-content: center;
 }
+
+
+
+footer > p {
+    padding: 1em;
+    background-color: #FFF;
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+}
+
+
+
+
+
 
