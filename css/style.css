@@ -28,6 +28,12 @@ img {
     width: 100px;
     background-color: transparent;
 }
+
+
+
+ul{
+    list-style: none;
+}
 .flex-container {
     display: flex;
 }
@@ -41,37 +47,41 @@ img {
 }
 
 .logo:hover {
-    transform: rotate(360deg);
+    
+    transform: rotate(360deg) scale(110%);
 }
 
 .logo:active {
-    transform: scale(80%);
+    transform: rotate(0deg) scale(80%);
 }
 
 .nav-button {
     font-family: 'Roboto Mono', monospace;
-    
-    text-decoration: none;
-    color: #000;
     border-color: #000;
     border-style: solid;
     border-width: 2px;
     background-color: #FFF;
-    padding: 0.8em;
-    margin: 0 0.4em;
+
+    padding: 1vw;
+
     transition-duration: 0.3s;
-    
+}
+.nav-button > a {
+    padding: 1vw;
+    margin: 0.4em;
+    text-decoration: none;
+    color: #000;
 }
 
 .nav-button:hover {
+    transform: translate(5px, -5px);
     box-shadow: -5px 5px #000;
     text-transform: uppercase;
-    transform: translate(5px, -5px);
 }
 
 .nav-button:active {
-    box-shadow: 0px 0px #000;
     transform: translate(0px, 0px);
+    box-shadow: 0px 0px #000;
 }
 
 
@@ -79,9 +89,15 @@ img {
 
 nav {
     padding: 0.5em 2em;
+    background-color: #BF4F51;
+    grid-area: nav;
+}
+nav > ul {
     justify-content: space-around;
     align-items: center;
-    background-color: #BF4F51;
+}
+nav > li {
+
 }
 
 p{
@@ -94,10 +110,18 @@ header{
 aside{
     grid-area: aside;
 }
+article{
+    grid-area: article;
+}
 
 
 #homepage {
-    grid-template-columns: ;
+    
+    grid-template-areas: 
+    'nav nav nav nav'
+    'header header header header'
+    'article article aside aside'
+    'footer footer footer footer';
 }
 
 #homepage-header {
@@ -113,17 +137,21 @@ aside{
 }
 
 footer{
-    margin-top: auto;
+    grid-area: footer;
     padding: 1em;
-    align-items: center;
     background-color: #BF4F51;
+}
+
+footer > ul {
+    
+    align-items: center;
     justify-content: center;
 }
 
 
 
-footer > p {
-    padding: 0.8em;
+footer > ul > li > p {
+    padding: 1vw;
     background-color: #FFF;
     border-color: #000;
     border-style: solid;
