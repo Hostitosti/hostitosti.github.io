@@ -29,10 +29,14 @@ img {
     background-color: transparent;
 }
 
-
+main{
+    min-height: 90vh;
+}
 
 ul{
     list-style: none;
+    
+    
 }
 .flex-container {
     display: flex;
@@ -44,6 +48,7 @@ ul{
 
 .logo {
     transition-duration: 0.5s;
+    
 }
 
 .logo:hover {
@@ -61,14 +66,14 @@ ul{
     border-style: solid;
     border-width: 2px;
     background-color: #FFF;
-
-    padding: 1vw;
-
+    margin: 0.5em;
+    padding: 0.8vw;
+    
     transition-duration: 0.3s;
 }
 .nav-button > a {
-    padding: 1vw;
-    margin: 0.4em;
+    padding: 0.8vw;
+    
     text-decoration: none;
     color: #000;
 }
@@ -88,7 +93,7 @@ ul{
 
 
 nav {
-    padding: 0.5em 2em;
+    padding: 0.2em;
     background-color: #BF4F51;
     grid-area: nav;
 }
@@ -97,11 +102,15 @@ nav > ul {
     align-items: center;
 }
 nav > li {
-
+    
 }
 
 p{
     
+}
+
+h2{
+    color: #BF4F51;
 }
 
 header{
@@ -118,27 +127,77 @@ article{
 #homepage {
     
     grid-template-areas: 
-    'nav nav nav nav'
     'header header header header'
     'article article aside aside'
     'footer footer footer footer';
 }
 
+
+
 #homepage-header {
     background-image: url(../img/placeholder.png);
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center the child elements */
+    align-items: center;
+    
+}
+#homepage-header > h1 {
+    color: white;
     text-align: center;
-    height: 16em;
+    
+}
+#homepage-header > h2 {
+    color: white;
+    text-align: center;
     
 }
 
-#homepage-header > h1 {
-    color: white;
+#homepage-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    width: 60vw;
+    padding: 1rem;
+
+}
+
+#homepage-navigationbox{
+    margin: auto;
+    padding: 1rem;
+    width: 30vw;
+    height: auto;
+    text-align: center;
+    align-items: center;
     
 }
+
+#homepage-navigationbox > section{
+    border: #000;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #FFFAEF;
+    padding: 1rem;
+    
+}
+#homepage-navigationbox > section > ul{
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+#homepage-navigationbox > section > h2{
+    color: #000;
+}
+
 
 footer{
     grid-area: footer;
-    padding: 1em;
+    padding: 0.2em;
     background-color: #BF4F51;
 }
 
@@ -151,7 +210,7 @@ footer > ul {
 
 
 footer > ul > li > p {
-    padding: 1vw;
+    padding: 0.8vw;
     background-color: #FFF;
     border-color: #000;
     border-style: solid;
