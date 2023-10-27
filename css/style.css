@@ -13,6 +13,7 @@ SecondairyALT - #FFFAEF
     border: 0;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 *::selection{
@@ -53,7 +54,7 @@ ul{
 
 .logo:hover {
     
-    transform: rotate(360deg) scale(110%);
+    transform: rotate(360deg);
 }
 
 .logo:active {
@@ -109,7 +110,7 @@ p{
     
 }
 
-h2{
+h1,h2{
     color: #BF4F51;
 }
 
@@ -121,6 +122,14 @@ aside{
 }
 article{
     grid-area: article;
+}
+
+.article-1{
+    grid-area: article1;
+}
+
+.article-2{
+    grid-area: article2;
 }
 
 
