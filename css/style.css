@@ -247,6 +247,12 @@ article{
     line-height: 2em;
 }
 
+#goedkoop-pagina-content p{
+    text-indent: 2em;
+    word-spacing: 0.2em;
+}
+
+
 #goedkoop-pagina-content img {
     width: 30vw;
 }
@@ -357,9 +363,6 @@ article{
     
 }
 
-#contact-form-text{
-    
-}
 
 #contact-form-text > input, #contact-form-text > textarea{
     border-style: solid;
@@ -378,7 +381,7 @@ article{
     font-weight: 700;
 }
 
-#contact-form legend{
+#contact-form-text legend{
     color: #BF4F51;
     font-weight: 700;
 }
