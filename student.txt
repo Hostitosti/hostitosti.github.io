@@ -1,5 +1,5 @@
-Student name: your name 
-Student number: your student number
-Student class: your class
-GitHub Repository: your github repository URL
-GitHub Pages URL: your github pages URL
+Student name: Daniel Garcia Espinales 
+Student number: 718842
+Student class: INF1C
+GitHub Repository: https://github.com/Hostitosti/hostitosti.github.io
+GitHub Pages URL: https://hostitosti.github.io/
