@@ -28,6 +28,10 @@ object {
     color: #FFF;
 }
 
+*::first-letter{
+    text-transform: capitalize;
+}
+
 body {
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif;
@@ -425,6 +429,7 @@ footer > ul > li > p {
 
         *{
             font-size: 14px;
+            
         }
 
         h1{
