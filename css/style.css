@@ -82,7 +82,6 @@ ul{
 .nav-button:hover {
     transform: translate(5px, -5px);
     box-shadow: -5px 5px #000;
-    text-transform: uppercase;
 }
 
 .nav-button:active {
@@ -116,6 +115,7 @@ p{
 
 h1,h2{
     color: #BF4F51;
+    text-transform: uppercase;
 }
 
 header{
@@ -327,6 +327,60 @@ article{
     height: auto;
 }
 
+#contact-form , #contact-form-radio, #contact-form-text{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form {
+    width: 75vw;
+    margin: auto;
+}
+
+#contact-form-radio{
+    background-color: #BF4F51;
+    color: #FFF;
+    padding: 1em;
+    margin: 1em;
+    
+}
+
+#contact-form-text{
+    
+}
+
+#contact-form-text > input, #contact-form-text > textarea{
+    border-style: solid;
+    border-color: #000;
+    border-width: 2px;
+    height: 2rem;
+    margin: 1em;
+}
+
+#contact-form-text > textarea{
+    height: 20rem;
+}
+
+#contact-form-text > label{
+    color: #BF4F51;
+    font-weight: 700;
+}
+
+#contact-form legend{
+    color: #BF4F51;
+    font-weight: 700;
+}
+
+#contact-form-text > input[type=submit]{
+    font-weight: 700;
+    background-color: #BF4F51;
+    color: #FFF;
+    height: 5em;
+    width: 50%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 
 footer{
     grid-area: footer;
